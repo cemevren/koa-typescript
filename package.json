@@ -1,48 +1,54 @@
 {
-   "name": "koa-typescript",
-   "version": "1.0.0",
-   "description": "npm # koa-typescript",
-   "main": "npm run.js",
-   "type": "module",
-   "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "ts-node build/app.js",
-      "typeorm": "typeorm-ts-node-commonjs"
-   },
-   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/cemevren/koa-typescript.git"
-   },
-   "author": "",
-   "license": "ISC",
-   "bugs": {
-      "url": "https://github.com/cemevren/koa-typescript/issues"
-   },
-   "homepage": "https://github.com/cemevren/koa-typescript#readme",
-   "devDependencies": {
-      "@types/config": "^0.0.41",
-      "@types/koa": "^2.13.4",
-      "@types/koa-bodyparser": "^4.3.7",
-      "@types/koa-json": "^2.0.20",
-      "@types/koa-logger": "^3.1.2",
-      "@types/koa-router": "^7.4.4",
-      "@types/node": "^16.11.10",
-      "@typescript-eslint/eslint-plugin": "^5.27.1",
-      "@typescript-eslint/parser": "^5.27.1",
-      "eslint": "^8.17.0",
-      "ts-node": "10.7.0",
-      "typescript": "^4.5.2"
-   },
-   "dependencies": {
-      "config": "^3.3.7",
-      "dotenv": "^16.0.1",
-      "koa": "^2.13.4",
-      "koa-bodyparser": "^4.3.0",
-      "koa-json": "^2.0.2",
-      "koa-logger": "^3.2.1",
-      "koa-router": "^10.1.1",
-      "pg": "^8.4.0",
-      "reflect-metadata": "^0.1.13",
-      "typeorm": "0.3.6"
-   }
+  "name": "koa-typescript",
+  "version": "1.0.0",
+  "description": "npm # koa-typescript",
+  "main": "npm run.js",
+  "scripts": {
+    "test": "jest",
+    "start:dev": "nodemon",
+    "start": "ts-node build/app.js",
+    "typeorm": "typeorm-ts-node-commonjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cemevren/koa-typescript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cemevren/koa-typescript/issues"
+  },
+  "homepage": "https://github.com/cemevren/koa-typescript#readme",
+  "devDependencies": {
+    "@types/config": "^0.0.41",
+    "@types/jest": "^28.1.2",
+    "@types/koa": "^2.13.4",
+    "@types/koa-bodyparser": "^4.3.7",
+    "@types/koa-json": "^2.0.20",
+    "@types/koa-logger": "^3.1.2",
+    "@types/koa-router": "^7.4.4",
+    "@types/node": "^16.11.10",
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^28.1.1",
+    "prettier": "^2.7.0",
+    "ts-jest": "^28.0.5",
+    "ts-node": "10.7.0",
+    "typescript": "4.7"
+  },
+  "dependencies": {
+    "config": "^3.3.7",
+    "dotenv": "^16.0.1",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^10.1.1",
+    "pg": "^8.4.0",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "0.3.6"
+  }
 }

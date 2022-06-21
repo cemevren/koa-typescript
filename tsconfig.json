@@ -1,12 +1,18 @@
 {
    "compilerOptions": {
       "target": "esnext",
-      "module": "esnext",
+      "module": "node16",
       "moduleResolution": "node",
       "outDir": "./build",
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
       "sourceMap": true,
      "allowSyntheticDefaultImports": true
-   }
+   },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
