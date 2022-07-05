@@ -1,17 +1,24 @@
 {
    "compilerOptions": {
-      "target": "esnext",
-      "module": "node16",
-      "moduleResolution": "node",
+      "target": "es2022",
+      "module": "commonjs",
+      "moduleResolution": "Node",
       "outDir": "./build",
+     "pretty": true,
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
       "sourceMap": true,
+     "esModuleInterop": true,
+     "noImplicitAny": true,
      "allowSyntheticDefaultImports": true
    },
   "include": [
-    "src/**/*"
+    "src/**/*", "decs.d.ts"
   ],
+  "ts-node": {
+    "esm": true,
+    "files": true
+  },
   "exclude": [
     "node_modules"
   ]

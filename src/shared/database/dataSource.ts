@@ -1,7 +1,6 @@
 import 'dotenv/config';
 import 'reflect-metadata';
 import { DataSource } from 'typeorm';
-import { Identity } from './services/identityService/persistence/Identity.model';
 
 const postgresConfig = {
   host: process.env.POSTGRES_HOST,
@@ -11,14 +10,12 @@ const postgresConfig = {
   database: process.env.POSTGRES_DB,
 };
 
-console.log(postgresConfig);
-
 export const AppDataSource = new DataSource({
   type: 'postgres',
   ...postgresConfig,
   synchronize: true,
-  logging: true,
-  entities: [Identity],
+  logging: false,
+  entities: ['src/services/**/entities/*{.ts,.js}'],
   migrations: ['src/migrations/**/*{.ts,.js}'],
   subscribers: ['src/subscribers/**/*{.ts,.js}'],
 });
